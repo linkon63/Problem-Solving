@@ -16,7 +16,6 @@
 
 // Input: nums = [3,1,2,10,1]
 // Output: [3,4,6,16,17]
- 
 
 // Constraints:
 
@@ -25,52 +24,50 @@
 
 // https://leetcode.com/problems/running-sum-of-1d-array/
 
-var runningSum = function (nums) {
-    const array = [nums[0]];
-    for (let i = 1; i < nums.length; i++) {
-        let value = 0;
-        for (let j = 0; j <= i; j++) {
-            value += nums[j];
-        }
-        array.push(value);
-        value = 0;
-    }
-return array
-};
-
+// var runningSum = function (nums) {
+//     const array = [nums[0]];
+//     for (let i = 1; i < nums.length; i++) {
+//         let value = 0;
+//         for (let j = 0; j <= i; j++) {
+//             value += nums[j];
+//         }
+//         array.push(value);
+//         value = 0;
+//     }
+// return array
+// };
 
 // runningSum([1, 2, 3, 4]);
 
 // var runningSum = function(nums) {
 //     for (let i = 1; i < nums.length; i++) {
 //         nums[i] = nums[i - 1] + nums[i]
-//     }  
-      
+//     }
+
 //       return nums
 //   };
 
-
-// #include<iostream>
+// #include <iostream>
 // using namespace std;
 
 // int main()
 // {
-//     int n,i,j=0;
-//     cout<<"Enter the value of n: ";
-//     cin>>n;
+//     int n, i, j = 0;
+//     cout << "Enter the value of n: ";
+//     cin >> n;
 
 //     int a[n];
 
-//     for(i=0;i<n;i++)
+//     for (i = 0; i < n; i++)
 //     {
-//         cin>>a[i];
+//         cin >> a[i];
 //     }
 
-//     for(i=0;i<n;i++)
+//     for (i = 0; i < n; i++)
 //     {
 
-//         cout<<a[i]+j<<"\t";
-//         j=j+a[i];
+//         cout << a[i] + j << "\t";
+//         j = j + a[i];
 //     }
 
 //     return 0;
