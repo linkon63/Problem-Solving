@@ -14,7 +14,7 @@ public:
 class B:public A
 {
 public:
-    // int a = 30;
+    int c = 30;
     void printB()
     {
         cout<<"A + B = "<< a+b<<endl;
@@ -28,6 +28,14 @@ int main()
     cout<<"A Class Proparties : "<<endl;
     cout<<"A:"<<aObj.a<<endl;
     cout<<"B:"<<aObj.b<<endl;
+    aObj.printA();
+
+    cout<<"\n\nAfter Change the Value of A"<<endl;
+    cout<<"Value of A:";
+    cin>>aObj.a;
+    cout<<"Value of B:";
+    cin>>aObj.b;
+    cout<<"\nAfter Change the Value of A and B"<<aObj.a<<" : "<<aObj.b<<endl;
     aObj.printA();
 
     cout<<"Inheritance Class Proparties : "<<endl;
